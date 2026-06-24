@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="50%" stop-color="#121212" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    
+    <!-- Gold/Brand Gradient -->
+    <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5b400" />
+      <stop offset="100%" stop-color="#ffcc33" />
+    </linearGradient>
+
+    <!-- Ambient Glow -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5b400" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#f5b400" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Shield / Badge Gradient -->
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c2c2c" />
+      <stop offset="100%" stop-color="#151515" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg-grad)" />
+
+  <!-- Grid overlay -->
+  <g opacity="0.04">
+    <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400" stroke="#ffffff" stroke-width="1" />
+    <path d="M 100,0 L 100,450 M 200,0 L 200,450 M 300,0 L 300,450 M 400,0 L 400,450 M 500,0 L 500,450 M 600,0 L 600,450 M 700,0 L 700,450" stroke="#ffffff" stroke-width="1" />
+  </g>
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="225" r="300" fill="url(#glow)" />
+
+  <!-- Shield / Crest / Medal (Representing Quality, Integrity, Professionalism, Values) -->
+  <g transform="translate(400, 200)">
+    <!-- Tech boundary circles -->
+    <circle r="130" fill="none" stroke="#f5b400" stroke-opacity="0.1" stroke-width="1" />
+    <circle r="100" fill="none" stroke="url(#brand-grad)" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="8,8" />
+
+    <!-- Award Emblem / Shield geometry -->
+    <path d="M -50,-60 L 50,-60 Q 70,10 50,60 L 0,90 L -50,60 Q -70,10 -50,-60 Z" fill="url(#shield-grad)" stroke="url(#brand-grad)" stroke-width="3.5" stroke-linejoin="round" />
+
+    <!-- Crown / Quality symbol on shield -->
+    <path d="M -25,-25 L -15,5 L 0,-15 L 15,5 L 25,-25 L 15,-12 L 0,-30 L -15,-12 Z" fill="url(#brand-grad)" />
+
+    <!-- Laurel wreath branch representations left & right -->
+    <path d="M -80,-20 Q -95,20 -70,55 Q -60,65 -50,70" fill="none" stroke="#f5b400" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+    <path d="M 80,-20 Q 95,20 70,55 Q 60,65 50,70" fill="none" stroke="#f5b400" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+
+    <!-- Glowing star in center -->
+    <circle cx="0" cy="30" r="12" fill="#121212" stroke="url(#brand-grad)" stroke-width="1.5" />
+    <polygon points="0,22 3,28 9,29 5,33 6,39 0,36 -6,39 -5,33 -9,29 -3,28" fill="#f5b400" />
+  </g>
+
+  <!-- Typography -->
+  <text x="400" y="375" fill="#ffffff" font-family="system-ui, sans-serif" font-size="24" font-weight="900" text-anchor="middle">قيمنا الراسخة</text>
+  <text x="400" y="400" fill="#f5b400" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="3" text-anchor="middle">OUR CORE VALUES</text>
+</svg>

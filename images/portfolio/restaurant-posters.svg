@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="50%" stop-color="#121212" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5b400" />
+      <stop offset="100%" stop-color="#ffcc33" />
+    </linearGradient>
+    <linearGradient id="red-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff416c" />
+      <stop offset="100%" stop-color="#ff4b2b" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff416c" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#ff416c" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg-grad)" />
+
+  <!-- Grid Pattern -->
+  <g opacity="0.04">
+    <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400" stroke="#ffffff" stroke-width="1" />
+    <path d="M 100,0 L 100,450 M 200,0 L 200,450 M 300,0 L 300,450 M 400,0 L 400,450 M 500,0 L 500,450 M 600,0 L 600,450 M 700,0 L 700,450" stroke="#ffffff" stroke-width="1" />
+  </g>
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="225" r="300" fill="url(#glow)" />
+
+  <!-- Food Poster mockups -->
+  <g transform="translate(400, 200)">
+    <!-- Main Center Poster -->
+    <rect x="-110" y="-120" width="220" height="240" rx="12" fill="#151515" stroke="url(#brand-grad)" stroke-width="2.5" />
+    
+    <!-- Stylized food bowl inside center poster -->
+    <circle cx="0" cy="-20" r="45" fill="#1d1d1d" stroke="#333" stroke-width="1" />
+    <!-- Salad/food details inside bowl -->
+    <path d="M -30,-25 Q 0,-45 30,-25 Q 40,-10 0,25 Q -40,-10 -30,-25 Z" fill="url(#red-grad)" opacity="0.8" />
+    <circle cx="15" cy="-20" r="8" fill="#f5b400" />
+    <circle cx="-15" cy="-10" r="6" fill="#32cd32" />
+    <circle cx="0" cy="-5" r="10" fill="#32cd32" opacity="0.8" />
+    
+    <!-- Poster text placeholder lines -->
+    <rect x="-70" y="45" width="140" height="8" rx="2" fill="#ffffff" opacity="0.8" />
+    <rect x="-40" y="60" width="80" height="6" rx="2" fill="url(#brand-grad)" />
+    <rect x="-55" y="72" width="110" height="5" rx="2" fill="#ffffff" opacity="0.3" />
+
+    <!-- Badges / Price tag -->
+    <rect x="50" y="-105" width="45" height="18" rx="4" fill="url(#brand-grad)" />
+    <text x="72.5" y="-93" fill="#000" font-family="system-ui" font-size="9" font-weight="900" text-anchor="middle">50% OFF</text>
+
+    <!-- Side Overlapping Poster Left -->
+    <g transform="translate(-150, 10) rotate(-12) scale(0.85)" opacity="0.6">
+      <rect x="-110" y="-120" width="220" height="240" rx="12" fill="#111" stroke="#333" stroke-width="1.5" />
+      <circle cx="0" cy="-20" r="45" fill="#181818" />
+      <rect x="-70" y="45" width="140" height="8" rx="2" fill="#fff" opacity="0.5" />
+      <rect x="-40" y="60" width="80" height="6" rx="2" fill="#f5b400" />
+    </g>
+
+    <!-- Side Overlapping Poster Right -->
+    <g transform="translate(150, 10) rotate(12) scale(0.85)" opacity="0.6">
+      <rect x="-110" y="-120" width="220" height="240" rx="12" fill="#111" stroke="#333" stroke-width="1.5" />
+      <circle cx="0" cy="-20" r="45" fill="#181818" />
+      <rect x="-70" y="45" width="140" height="8" rx="2" fill="#fff" opacity="0.5" />
+      <rect x="-40" y="60" width="80" height="6" rx="2" fill="#f5b400" />
+    </g>
+  </g>
+
+  <!-- Typography -->
+  <text x="400" y="380" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="900" text-anchor="middle">تصميم بوسترات المطاعم</text>
+  <text x="400" y="405" fill="#f5b400" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="3" text-anchor="middle">RESTAURANT CAMPAIGN</text>
+</svg>

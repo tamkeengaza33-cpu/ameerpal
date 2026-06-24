@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="50%" stop-color="#121212" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5b400" />
+      <stop offset="100%" stop-color="#ffcc33" />
+    </linearGradient>
+    <linearGradient id="magenta-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec008c" />
+      <stop offset="100%" stop-color="#fc6767" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fc6767" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#fc6767" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg-grad)" />
+
+  <g opacity="0.04">
+    <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400" stroke="#ffffff" stroke-width="1" />
+    <path d="M 100,0 L 100,450 M 200,0 L 200,450 M 300,0 L 300,450 M 400,0 L 400,450 M 500,0 L 500,450 M 600,0 L 600,450 M 700,0 L 700,450" stroke="#ffffff" stroke-width="1" />
+  </g>
+
+  <circle cx="400" cy="225" r="300" fill="url(#glow)" />
+
+  <!-- Logo guidelines and branding components representation -->
+  <g transform="translate(400, 195)">
+    <!-- Brand guidelines sheet background -->
+    <rect x="-160" y="-110" width="320" height="210" rx="10" fill="#141414" stroke="url(#magenta-blue)" stroke-width="2" />
+    
+    <!-- Title representing brand rules -->
+    <rect x="-135" y="-85" width="120" height="12" rx="3" fill="#fff" opacity="0.8" />
+    <rect x="-135" y="-63" width="70" height="6" rx="2" fill="url(#brand-grad)" />
+
+    <!-- Grid guides representing exact geometry logo construction -->
+    <g transform="translate(60, -30)" stroke="#fff" stroke-opacity="0.15" stroke-width="1" fill="none">
+      <!-- Grid lines -->
+      <line x1="-60" y1="0" x2="60" y2="0" />
+      <line x1="0" y1="-60" x2="0" y2="60" />
+      <circle cx="0" cy="0" r="45" />
+      <circle cx="0" cy="0" r="30" stroke-dasharray="3,3" />
+      <rect x="-40" y="-40" width="80" height="80" stroke-dasharray="4,4" />
+      <!-- Golden ratio diagonals -->
+      <line x1="-40" y1="-40" x2="40" y2="40" stroke="url(#brand-grad)" stroke-width="0.8" />
+      
+      <!-- Constructed Logo Glyph in magenta-blue -->
+      <path d="M -25,15 Q 0,-35 25,15 Z" fill="none" stroke="url(#magenta-blue)" stroke-width="3" stroke-linecap="round" />
+      <circle cx="0" cy="-5" r="10" fill="url(#magenta-blue)" />
+    </g>
+
+    <!-- Color Palettes guide bottom left -->
+    <g transform="translate(-135, 10)">
+      <rect x="0" y="0" width="100" height="8" rx="2" fill="#333" />
+      
+      <!-- Palette circles -->
+      <circle cx="10" cy="28" r="12" fill="url(#magenta-blue)" stroke="#fff" stroke-width="1" />
+      <circle cx="38" cy="28" r="12" fill="url(#brand-grad)" />
+      <circle cx="66" cy="28" r="12" fill="#1e3a8a" />
+      <circle cx="94" cy="28" r="12" fill="#10b981" />
+    </g>
+
+    <!-- Font specification guide bottom right -->
+    <g transform="translate(15, 55)" fill="#fff" opacity="0.7">
+      <text x="0" y="0" font-family="system-ui, sans-serif" font-size="10" font-weight="900">AaBbCc</text>
+      <rect x="0" y="8" width="120" height="4" rx="1.5" opacity="0.5" />
+      <rect x="0" y="16" width="90" height="4" rx="1.5" opacity="0.3" />
+    </g>
+  </g>
+
+  <text x="400" y="380" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="900" text-anchor="middle">هوية بصرية كاملة لشركة ناشئة</text>
+  <text x="400" y="405" fill="#f5b400" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="3" text-anchor="middle">STARTUP BRAND SYSTEM</text>
+</svg>
