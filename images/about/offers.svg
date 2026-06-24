@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="50%" stop-color="#121212" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    
+    <!-- Gold/Brand Gradient -->
+    <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5b400" />
+      <stop offset="100%" stop-color="#ffcc33" />
+    </linearGradient>
+
+    <!-- Accent Glow -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5b400" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#f5b400" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Cyan tech accent -->
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg-grad)" />
+
+  <!-- Grid overlay -->
+  <g opacity="0.04">
+    <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400" stroke="#ffffff" stroke-width="1" />
+    <path d="M 100,0 L 100,450 M 200,0 L 200,450 M 300,0 L 300,450 M 400,0 L 400,450 M 500,0 L 500,450 M 600,0 L 600,450 M 700,0 L 700,450" stroke="#ffffff" stroke-width="1" />
+  </g>
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="225" r="300" fill="url(#glow)" />
+
+  <!-- 3D Stack / Layers / Modular grid (Representing diverse services and offers) -->
+  <g transform="translate(400, 200)">
+    <!-- Isometric Layers representing different domains (Design, Code, AI, Training) -->
+    
+    <!-- Layer 3 (Bottom) - Code & Tech -->
+    <g transform="translate(0, 50)">
+      <polygon points="0,-25 100,25 0,75 -100,25" fill="#141414" stroke="#00f2fe" stroke-width="1.5" opacity="0.8" />
+      <path d="M -50,15 L -20,30" stroke="#00f2fe" stroke-width="2" />
+      <path d="M 50,15 L 20,30" stroke="#00f2fe" stroke-width="2" />
+    </g>
+
+    <!-- Layer 2 (Middle) - Creative Design -->
+    <g transform="translate(0, 0)">
+      <polygon points="0,-25 100,25 0,75 -100,25" fill="#181818" stroke="url(#brand-grad)" stroke-width="2" />
+      <circle cx="-30" cy="25" r="5" fill="#f5b400" />
+      <circle cx="0" cy="10" r="7" fill="#ffffff" opacity="0.2" />
+      <circle cx="30" cy="25" r="5" fill="#f5b400" />
+    </g>
+
+    <!-- Layer 1 (Top) - AI & Innovation -->
+    <g transform="translate(0, -50)">
+      <polygon points="0,-25 100,25 0,75 -100,25" fill="#202020" stroke="url(#cyan-grad)" stroke-width="1.5" opacity="0.9" />
+      <!-- Star spark inside top layer -->
+      <path d="M 0,10 Q 0,25 -15,25 Q 0,25 0,40 Q 0,25 15,25 Q 0,25 0,10 Z" fill="#00f2fe" />
+    </g>
+
+    <!-- Connector lines between layers -->
+    <line x1="-100" y1="-25" x2="-100" y2="75" stroke="#ffffff" stroke-width="1" stroke-dasharray="4,4" opacity="0.2" />
+    <line x1="100" y1="-25" x2="100" y2="75" stroke="#ffffff" stroke-width="1" stroke-dasharray="4,4" opacity="0.2" />
+    <line x1="0" y1="-75" x2="0" y2="125" stroke="#ffffff" stroke-width="1" stroke-dasharray="4,4" opacity="0.1" />
+  </g>
+
+  <!-- Typography -->
+  <text x="400" y="375" fill="#ffffff" font-family="system-ui, sans-serif" font-size="24" font-weight="900" text-anchor="middle">ماذا نقدم لكم؟</text>
+  <text x="400" y="400" fill="#f5b400" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="3" text-anchor="middle">OUR OFFERS &amp; SERVICES</text>
+</svg>
