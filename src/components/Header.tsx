@@ -11,7 +11,6 @@ interface HeaderProps {
 export default function Header({ activeTab, setActiveTab, onCvClick }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [showAnnouncement, setShowAnnouncement] = useState(true);
 
   const navItems = [
     { id: 'home', label: 'الرئيسية' },
@@ -50,35 +49,12 @@ export default function Header({ activeTab, setActiveTab, onCvClick }: HeaderPro
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-neutral-950/80 border-b border-border-dark/80 py-3.5 backdrop-blur-md shadow-lg'
-          : 'bg-transparent pt-0 pb-6'
+          ? 'bg-neutral-950/80 border-b border-border-dark/80 py-4 backdrop-blur-md shadow-lg'
+          : 'bg-transparent py-6'
       }`}
       dir="rtl"
     >
-      {showAnnouncement && !scrolled && (
-        <div className="w-full bg-neutral-950/95 border-b border-brand/20 py-2.5 px-4 transition-all duration-300">
-          <div className="mx-auto max-w-7xl flex items-center justify-between gap-4">
-            <div className="flex items-center gap-2 text-right">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
-              </span>
-              <p className="text-xs sm:text-sm text-neutral-200 leading-relaxed font-light">
-                تم تحديث ألوان تفاعل الاقسام لتتوهج باللون الأصفر الذهبي المميز لهوية المنصة البصرية (<span className="text-brand font-mono font-bold">#F5B400</span>) بدلاً من ألوانها الافتراضية السابقة، مما يمنح الفوتر مظهراً متناسقاً وفاخراً.
-              </p>
-            </div>
-            <button
-              onClick={() => setShowAnnouncement(false)}
-              className="text-neutral-400 hover:text-brand transition-colors p-1 rounded-lg hover:bg-neutral-900 shrink-0 cursor-pointer"
-              title="إغلاق"
-            >
-              <X size={16} />
-            </button>
-          </div>
-        </div>
-      )}
-
-      <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between ${showAnnouncement && !scrolled ? 'mt-4' : ''}`}>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
         {/* Logo and branding */}
         <Logo className="cursor-pointer" onClick={() => handleNavClick('home')} />
